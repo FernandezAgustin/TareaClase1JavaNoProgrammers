@@ -1,0 +1,33 @@
+package com.educacionit;
+
+import java.util.Scanner;
+
+public class EstudiantesHombresMujeres {
+
+	public static void main(String[] args) {
+		
+		int hombres = 0;
+		int mujeres = 0;
+		
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println ("Cuantos estudiantes masculinos hay en esta clase? ");
+		hombres = teclado.nextInt();
+		
+		System.out.println ("Cuantos estudiantes femeninos hay en esta clase? ");
+		mujeres = teclado.nextInt();
+
+		int totalEstud = hombres + mujeres ;
+		
+		int porcentajeHombres = (totalEstud * hombres) / 100;
+		
+		int porcentajeMujeres = (totalEstud * mujeres) / 100;
+		
+		System.out.println("El numero de hombres representa el %" + porcentajeHombres + " de la clase " + " y el numero de mujeres representa el %" + porcentajeMujeres + " de la clase" );
+			
+		teclado.close();
+		
+	}
+
+}
