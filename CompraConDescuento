@@ -1,0 +1,25 @@
+package com.educacionit;
+
+import java.util.Scanner;
+
+public class TiendaConDescuento {
+
+	public static void main(String[] args) {
+		
+		float totalDeCompra = 0 , descuento = 0 , totalAPagar = 0 ;
+		double porcentaje  = 0.15 ;
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Cuanto es el total de compra? ");
+		
+		totalDeCompra = teclado.nextFloat();
+		descuento = (float) (totalDeCompra * porcentaje) ;
+		totalAPagar = totalDeCompra - descuento;
+		
+		System.out.println("El descuento por la de suma de $" + totalDeCompra + " es de: $" + descuento + " Usted debe abonar el total de: $" + totalAPagar );
+	
+		teclado.close();
+	};
+
+}
