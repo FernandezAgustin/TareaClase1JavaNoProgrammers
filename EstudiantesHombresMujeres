@@ -9,7 +9,6 @@ public class EstudiantesHombresMujeres {
 		int hombres = 0;
 		int mujeres = 0;
 		
-		
 		Scanner teclado = new Scanner(System.in);
 		
 		System.out.println ("Cuantos estudiantes masculinos hay en esta clase? ");
@@ -20,9 +19,9 @@ public class EstudiantesHombresMujeres {
 
 		int totalEstud = hombres + mujeres ;
 		
-		int porcentajeHombres = (totalEstud * hombres) / 100;
+		int porcentajeHombres = (hombres * 100) / totalEstud;
 		
-		int porcentajeMujeres = (totalEstud * mujeres) / 100;
+		int porcentajeMujeres = (mujeres * 100) / totalEstud;
 		
 		System.out.println("El numero de hombres representa el %" + porcentajeHombres + " de la clase " + " y el numero de mujeres representa el %" + porcentajeMujeres + " de la clase" );
 			
